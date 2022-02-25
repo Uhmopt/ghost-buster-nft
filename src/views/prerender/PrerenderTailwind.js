@@ -5,6 +5,12 @@ export default function PrerenderTailwind() {
     <div>
       {/* background */}
       <div className="bg-home"></div>
+      <div className="bg-mint"></div>
+      <div className="bg-lab"></div>
+      <div className="bg-stake"></div>
+      {/* background-color */}
+      <div className="bg-white"></div>
+      <div className="bg-black"></div>
       {/* text */}
       <div className="text-xs"></div>
       <div className="text-sm"></div>

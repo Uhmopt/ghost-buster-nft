@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import CustomText from "./CustomText";
 
 export default function CustomButton({
@@ -19,8 +20,12 @@ export default function CustomButton({
   const shadow =
     typeof isShadow === "boolean" ? isShadow : variant === "outlined";
 
-  return (
-    <div className="flex justify-center uppercase" onClick={onClick}>
+  const handleClick = () => {
+    onClick();
+  };
+
+  const container = (
+    <div className="flex justify-center uppercase" onClick={handleClick}>
       <div
         className={[
           "cursor-pointer ",
@@ -38,4 +43,6 @@ export default function CustomButton({
       </div>
     </div>
   );
+
+  return to ? <Link to={to}>{container}</Link> : container;
 }

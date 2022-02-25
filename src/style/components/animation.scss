@@ -1,0 +1,21 @@
+.animate-idle {
+  animation: idle 5s ease-in-out infinite;
+}
+
+$randomNumber: random(15);
+
+@keyframes idle {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate($randomNumber + px, -$randomNumber + px);
+  }
+  50% {
+    transform: translate(-$randomNumber + px, $randomNumber + px);
+  }
+  75% {
+    transform: translate(-$randomNumber + px, -$randomNumber + px);
+  }
+}

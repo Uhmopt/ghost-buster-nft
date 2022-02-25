@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import CustomFabContainer from "./CustomFabContainer";
 
 export default function CustomFab({
@@ -6,16 +7,19 @@ export default function CustomFab({
   children = null,
   className = "",
   fullWidth = false,
+  to = "",
   ...props
 }) {
-  return (
+  const content = (
     <CustomFabContainer
       {...props}
-      className={[className, "hover:bg-opacity-20"].join(" ")}
+      className={[className].join(" ")}
       color={color}
       fullWidth={fullWidth}
     >
       {children}
     </CustomFabContainer>
   );
+
+  return to ? <Link to={to}>{content}</Link> : content;
 }

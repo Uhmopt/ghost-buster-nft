@@ -24,11 +24,17 @@ module.exports = {
       },
       backgroundImage: {
         home: "url('/src/assets/img/back-home.png')",
+        mint: "url('/src/assets/img/back-mint.png')",
         "ghost-buster": "url('/src/assets/img/ghost-buster.png')",
       },
       fontSize: {
         xs: ["13px", "15px"],
+        "6xl": ["60px", "70px"],
         "7xl": ["80px", "94px"],
+      },
+
+      borderRadius: {
+        "4xl": "30px",
       },
 
       fontFamily: { body: ["Roboto", '"Open Sans"'] },
@@ -42,9 +48,13 @@ module.exports = {
       },
       boxShadow: {
         "fade-white": "inset 0px 0px 10px 20px #FFF",
-        fab: "0px 6px 4px rgba(0, 0, 0, 0.25)",
+        fab: "0px 4px 4px rgba(0, 0, 0, 0.25)",
       },
-      dropShadow: {},
+
+      dropShadow: {
+        "fade-white": "inset 0px 0px 10px 20px #FFF",
+        fab: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+      },
     },
   },
 };

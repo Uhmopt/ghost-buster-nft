@@ -3,6 +3,8 @@ import React from "react";
 export default function CustomText({
   size = "md",
   className = "",
+  transparent = false,
+  shadow = false,
   children = null,
 }) {
   return (
@@ -10,7 +12,8 @@ export default function CustomText({
       className={[
         className,
         `font-extrabold text-center text-${size} text-white text-outline `,
-        "opacity-80",
+        transparent ? "opacity-80" : "",
+        shadow ? "drop-shadow-fab" : "",
       ].join(" ")}
     >
       {children}

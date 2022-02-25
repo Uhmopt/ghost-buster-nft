@@ -1,11 +1,10 @@
-import { Telegram, Twitter } from "@mui/icons-material";
-import { Container, Grid, IconButton, Stack } from "@mui/material";
+import { Container, Grid, Stack } from "@mui/material";
 import React from "react";
 import CustomButton from "views/components/CustomButton";
-import CustomFabContainer from "views/components/CustomFabContainer";
 import CustomText from "views/components/CustomText";
 import GhostBuster from "views/components/GhostBuster";
 import Logo from "views/components/Logo";
+import SocialButtons from "views/components/SocialButtons";
 
 export default function HomeComponent() {
   return (
@@ -15,7 +14,9 @@ export default function HomeComponent() {
         <Logo />
 
         {/* Main Image */}
-        <GhostBuster />
+        <div className="flex justify-center">
+          <GhostBuster />
+        </div>
 
         {/* Play button */}
         <CustomButton variant="outlined">
@@ -36,14 +37,7 @@ export default function HomeComponent() {
         </Grid>
 
         {/* Social */}
-        <CustomFabContainer>
-          <IconButton size="small">
-            <Telegram htmlColor="white" />
-          </IconButton>
-          <IconButton size="small">
-            <Twitter htmlColor="white" />
-          </IconButton>
-        </CustomFabContainer>
+        <SocialButtons />
       </Stack>
     </Container>
   );
