@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        xs: "450px",
+        xs: "300px",
         sm: "600px",
         md: "900px",
         lg: "1200px",
@@ -24,10 +24,15 @@ module.exports = {
       },
       backgroundImage: {
         home: "url('/src/assets/img/back-home.png')",
+        "ghost-buster": "url('/src/assets/img/ghost-buster.png')",
       },
       fontSize: {
-        xs: [".75rem", "inherit"],
+        xs: ["13px", "15px"],
+        "7xl": ["80px", "94px"],
       },
+
+      fontFamily: { body: ["Roboto", '"Open Sans"'] },
+
       colors: {
         primary: "#39B3FF",
         secondary: "#003657",
@@ -36,12 +41,10 @@ module.exports = {
         error: "#FF0000",
       },
       boxShadow: {
-        logo: "0px 8px 15px #00000026",
         "fade-white": "inset 0px 0px 10px 20px #FFF",
+        fab: "0px 6px 4px rgba(0, 0, 0, 0.25)",
       },
-      dropShadow: {
-        logo: "0px 8px 15px #00000026",
-      },
+      dropShadow: {},
     },
   },
 };
