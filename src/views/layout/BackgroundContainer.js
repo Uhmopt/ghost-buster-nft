@@ -6,7 +6,9 @@ import Header from "./header";
 export default function BackgroundContainer({ children = null }) {
   const pathname = useLocation().pathname;
 
-  const pageName = String(pathname.split("/")?.[1] || "home").toLowerCase();
+  let pageName = String(pathname.split("/")?.[1] || "home").toLowerCase();
+
+  pageName = pageName === "stake" ? "mint" : pageName;
 
   return (
     <div

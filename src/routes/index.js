@@ -4,6 +4,7 @@ import Layout from "views/layout";
 import ErrorPage from "views/pages/error";
 import Home from "views/pages/home";
 import Mint from "views/pages/mint";
+import Stake from "views/pages/stake";
 
 export default function Root() {
   return (
@@ -13,6 +14,7 @@ export default function Root() {
           <Route index element={<Home />} />
           <Route path="home" element={<Home />} />
           <Route path="mint" element={<Mint />} />
+          <Route path="stake" element={<Stake />} />
           <Route path="*" element={<ErrorPage code={404} />} />
         </Route>
       </Routes>
