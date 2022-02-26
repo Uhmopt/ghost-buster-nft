@@ -1,8 +1,8 @@
 import { Add, Remove } from "@mui/icons-material";
 import { Container, Grid, IconButton, Stack } from "@mui/material";
 import React from "react";
-import BlackContainer from "views/components/BlackContainer";
 import CustomFab from "views/components/CustomFab";
+import CustomFabContainer from "views/components/CustomFabContainer";
 import CustomText from "views/components/CustomText";
 import MintProgress from "./MintProgress";
 
@@ -24,7 +24,11 @@ export default function MintComponent() {
             alignItems="center"
           >
             <Grid item>
-              <BlackContainer className="flex items-center p-2">
+              <CustomFabContainer
+                color="black"
+                transparent={70}
+                className="flex items-center p-2"
+              >
                 <IconButton>
                   <Remove htmlColor="white" />
                 </IconButton>
@@ -32,21 +36,21 @@ export default function MintComponent() {
                 <IconButton>
                   <Add htmlColor="white" />
                 </IconButton>
-              </BlackContainer>
+              </CustomFabContainer>
             </Grid>
 
             <Grid item>
-              <CustomFab color="black">
+              <CustomFab color="black" transparent={70}>
                 <CustomText size="2xl">MINT</CustomText>
               </CustomFab>
             </Grid>
           </Grid>
 
-          <CustomFab color="black">
+          <CustomFab color="black" transparent={70}>
             <CustomText size="xl">BUY $GHOOST</CustomText>
           </CustomFab>
 
-          <CustomFab color="black" to="/">
+          <CustomFab to="/" color="black" transparent={70}>
             <CustomText size="xl">BACK</CustomText>
           </CustomFab>
         </Stack>

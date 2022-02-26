@@ -1,7 +1,7 @@
 import { formatArray } from "lib/arrayObject";
 import { toNumber } from "lib/math";
 import React from "react";
-import BlackContainer from "./BlackContainer";
+import CustomFabContainer from "./CustomFabContainer";
 import CustomText from "./CustomText";
 
 const BottomLabel = ({
@@ -63,7 +63,11 @@ export default function ProgressBar({
   total = toNumber(total) ? toNumber(total) : 1;
   return (
     <div>
-      <BlackContainer className={["p-4 w-full h-20", "relative"].join(" ")}>
+      <CustomFabContainer
+        color="black"
+        transparent={70}
+        className={["p-4 w-full h-20", "relative"].join(" ")}
+      >
         <div
           style={{ width: `${(toNumber(value) / total) * 100}%` }}
           className={["bg-gray-300", "h-full rounded-4xl", "relative"].join(
@@ -89,7 +93,7 @@ export default function ProgressBar({
             />
           )
         )}
-      </BlackContainer>
+      </CustomFabContainer>
     </div>
   );
 }

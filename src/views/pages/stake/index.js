@@ -1,5 +1,5 @@
 import React from "react";
-import StakeComponent from "./components/StakeComponent";
+import StakeComponent from "./StakeComponent";
 
 export default function Stake() {
   return (

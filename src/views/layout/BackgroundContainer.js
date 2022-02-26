@@ -32,7 +32,7 @@ export default function BackgroundContainer({ children = null }) {
         {children}
       </div>
       <div className="fixed w-full left-0 px-9 pt-9">
-        <Header />
+        <Header pageName={pageName} />
       </div>
     </div>
   );

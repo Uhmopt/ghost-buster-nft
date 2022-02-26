@@ -8,9 +8,21 @@ export default function PrerenderTailwind() {
       <div className="bg-mint"></div>
       <div className="bg-lab"></div>
       <div className="bg-stake"></div>
+
       {/* background-color */}
       <div className="bg-white"></div>
       <div className="bg-black"></div>
+      <div className="bg-gray-300"></div>
+      <div className="bg-gray-500"></div>
+      <div className="bg-gray-700"></div>
+
+      {/* background-transparent */}
+      <div className="bg-opacity-10"></div>
+      <div className="bg-opacity-20"></div>
+      <div className="bg-opacity-30"></div>
+      <div className="bg-opacity-50"></div>
+      <div className="bg-opacity-70"></div>
+
       {/* text */}
       <div className="text-xs"></div>
       <div className="text-sm"></div>

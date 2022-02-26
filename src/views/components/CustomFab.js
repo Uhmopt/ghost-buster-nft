@@ -8,14 +8,16 @@ export default function CustomFab({
   className = "",
   fullWidth = false,
   to = "",
+  transparent = 20,
   ...props
 }) {
   const content = (
     <CustomFabContainer
       {...props}
-      className={[className].join(" ")}
+      className={[className, "py-2 px-4", "cursor-pointer"].join(" ")}
       color={color}
       fullWidth={fullWidth}
+      transparent={transparent}
     >
       {children}
     </CustomFabContainer>

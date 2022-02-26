@@ -5,22 +5,22 @@ export default function CustomFabContainer({
   children = null,
   className = "",
   fullWidth = false,
+  transparent = 20,
   ...props
 }) {
-  const isTransparent = color === "transparent";
   color = color === "transparent" ? "white" : color;
   return (
     <div className={fullWidth ? "" : "flex justify-center"}>
       <div
         {...props}
         className={[
-          className,
+          "rounded-4xl",
           `bg-${color}`,
-          isTransparent ? "bg-opacity-20" : "bg-opacity-70",
-          "uppercase text-white py-2 px-4 rounded-full text-xs font-extrabold ",
+          `bg-opacity-${transparent}`,
+          "uppercase text-white text-xs font-extrabold ",
           "shadow-fab hover:shadow ",
-          "cursor-pointer ",
           "transition-all ",
+          className,
         ].join(" ")}
       >
         {children}
