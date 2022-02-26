@@ -17,7 +17,7 @@ export default function CustomFabContainer({
           "rounded-4xl",
           `bg-${color}`,
           `bg-opacity-${transparent}`,
-          "uppercase text-white text-xs font-extrabold ",
+          "text-white text-xs font-extrabold ",
           "shadow-fab hover:shadow ",
           "transition-all ",
           className,

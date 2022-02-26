@@ -24,6 +24,21 @@ export default function PrerenderTailwind() {
       <div className="bg-opacity-70"></div>
 
       {/* text */}
+      <div className="text-white"></div>
+      <div className="text-blue-300"></div>
+      <div className="text-orange-600"></div>
+
+      {/* border */}
+      <div className="border-white"></div>
+      <div className="border-blue-300"></div>
+      <div className="border-orange-600"></div>
+
+      {/* decoration */}
+      <div className="decoration-white"></div>
+      <div className="decoration-blue-300"></div>
+      <div className="decoration-orange-600"></div>
+
+      {/* text */}
       <div className="text-xs"></div>
       <div className="text-sm"></div>
       <div className="text-base"></div>

@@ -6,12 +6,16 @@ export default function CustomText({
   transparent = false,
   shadow = false,
   children = null,
+  color = "white",
+  outlined = true,
 }) {
   return (
     <div
       className={[
         className,
-        `font-extrabold text-center text-${size} text-white text-outline `,
+        `font-extrabold text-center text-${size}`,
+        `text-${color}`,
+        outlined ? "text-outline" : "",
         transparent ? "opacity-80" : "",
         shadow ? "drop-shadow-fab" : "",
       ].join(" ")}

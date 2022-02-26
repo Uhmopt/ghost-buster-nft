@@ -31,6 +31,7 @@ export default function BackgroundContainer({ children = null }) {
       >
         {children}
       </div>
+      {/* <div className="fixed w-full left-0 px-9 pt-9 pb-4 backdrop-blur"> */}
       <div className="fixed w-full left-0 px-9 pt-9">
         <Header pageName={pageName} />
       </div>

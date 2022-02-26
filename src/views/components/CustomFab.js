@@ -14,7 +14,9 @@ export default function CustomFab({
   const content = (
     <CustomFabContainer
       {...props}
-      className={[className, "py-2 px-4", "cursor-pointer"].join(" ")}
+      className={[className, "py-2 px-4", "cursor-pointer", "uppercase"].join(
+        " "
+      )}
       color={color}
       fullWidth={fullWidth}
       transparent={transparent}

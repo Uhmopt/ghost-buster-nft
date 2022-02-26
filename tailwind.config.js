@@ -25,6 +25,7 @@ module.exports = {
       backgroundImage: {
         home: "url('/src/assets/img/back-home.png')",
         mint: "url('/src/assets/img/back-mint.png')",
+        lab: "url('/src/assets/img/back-lab.png')",
         "ghost-buster": "url('/src/assets/img/ghost-buster.png')",
       },
       fontSize: {

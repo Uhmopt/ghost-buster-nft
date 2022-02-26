@@ -8,11 +8,16 @@ export default function CustomButton({
   children = null,
   isShadow,
   to = "",
+  color = "white",
+  outlined = true,
+  size = "lg",
   onClick = () => {},
 }) {
   const content =
-    typeof children === "string" ? (
-      <CustomText size="lg">{children}</CustomText>
+    typeof children === "string" || typeof children === "number" ? (
+      <CustomText color={color} outlined={outlined} size={size}>
+        {children}
+      </CustomText>
     ) : (
       children
     );
@@ -25,7 +30,7 @@ export default function CustomButton({
   };
 
   const container = (
-    <div className="flex justify-center uppercase" onClick={handleClick}>
+    <div className="flex justify-center" onClick={handleClick}>
       <div
         className={[
           "cursor-pointer ",
@@ -33,9 +38,9 @@ export default function CustomButton({
           "transition-all ",
           fullWidth ? "flex-grow" : "",
           variant === "text"
-            ? "hover:underline underline-offset-2 decoration-white"
+            ? `hover:underline underline-offset-2 decoration-${color}`
             : variant === "outlined"
-            ? "border-2 border-white"
+            ? `border-2 border-${color} uppercase`
             : "",
         ].join(" ")}
       >
