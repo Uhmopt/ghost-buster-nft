@@ -6,6 +6,7 @@ import store from "store";
 import "style/index.scss";
 import { lightTheme } from "theme/lightTheme";
 import PrerenderTailwind from "views/prerender/PrerenderTailwind";
+import web3 from "web3";
 
 function App() {
   return (
